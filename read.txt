@@ -1,0 +1,56 @@
+how to start the postgres from postgres shell 
+========>        psql -U postgres    ==> this will create a user in postgres
+Password ==>     Aman@123   
+=============>  \c perntodo    (perntodo is a  Table name)
+=============>  INSERT INTO todo(description) VALUES('Remove redundant functions and code blocks');     => To insert the data in table
+=============>  SELECT * FROM todo;                                       ==> To check the data in table i.e. (todo)
+
+\l  ==> list all database in postgreSQL
+\c  ==> move inside a database
+\dt  ==> show table in database
+
+CREATE DATABASE perntodo  ==>  create a database 
+CREATE TABLE todo(..) ===>  create a table called todo
+
+
+Note:  PostgreSQL contains ''   not ""       ==> means ==> it takes single quotes of string not double quotes of string 
+
+
+
+
+
+
+
+
+//To set the PATH variable on Windows and add the PostgreSQL bin directory to it, you can follow these steps:
+
+1.Find the PostgreSQL bin Directory:
+Locate the bin directory within your PostgreSQL installation. The path might look something like C:\Program Files\PostgreSQL\{version}\bin, where {version} is the PostgreSQL version number.
+
+2.Copy the Path:
+Copy the full path to the bin directory.
+
+==>Open System Properties:
+
+1.Right-click on the "This PC" or "Computer" icon on your desktop or in the File Explorer.
+Select "Properties."
+Open Advanced System Settings:
+
+In the System window, click on "Advanced system settings" on the left.
+Open Environment Variables:
+
+In the System Properties window, click on the "Environment Variables..." button.
+Edit the System's PATH Variable:
+
+In the Environment Variables window, you'll see two sections: one for User variables and one for System variables. Edit the "Path" variable in the "System variables" section.
+Add PostgreSQL bin Directory:
+
+Click on the "Path" variable in the "System variables" section.
+Click the "Edit..." button.
+Add New Entry:
+
+Click the "New" button.
+Paste the path to the PostgreSQL bin directory that you copied earlier.
+Save Changes:
+
+Click "OK" on each window to save the changes.
